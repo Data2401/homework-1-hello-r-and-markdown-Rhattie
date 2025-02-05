@@ -1,6 +1,6 @@
 ---
 title: "Hello R"
-author: "Adam Gullion"
+author: "Adam I Gullion"
 date: "Data 2401"
 output: html_document
 ---
@@ -18,11 +18,11 @@ library(datasauRus)
 
 ### Exercise 1
 
-(Type your answer to Exercise 1 here. This exercise does not require any R code. **Remove notes like this in the final product that you turn in**)
+A data frame with 1846 rows and 3 variables, and 3 columns:
+
+It has the variables "x", "y", and "dataset".
 
 ### Exercise 2
-
-(The answers for this Exercise are given for you below. But you should clean up some of the narrative so that it only includes what you want to turn in.)
 
 First let's plot the data in the dino dataset:
 
@@ -32,8 +32,6 @@ dino_data <- datasaurus_dozen %>%
 ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
-
-And next calculate the correlation between `x` and `y` in this dataset:
 
 ```{r cor-dino}
 dino_data %>%
